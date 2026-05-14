@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "slsa-supply-chain-mcp"
+version = "1.0.0"
+description = "SLSA (Supply chain Levels for Software Artifacts) v1.0 framework. Compute SLSA level + remediation roadmap for software releases."
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+authors = [{name = "MEOK AI Labs", email = "hello@meok.ai"}]
+keywords = ["slsa", "supply-chain", "provenance", "attestation", "build", "mcp", "mcp-server", "model-context-protocol", "ai-governance"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries",
+]
+dependencies = ["mcp>=1.0.0"]
+
+[project.urls]
+Homepage = "https://meok.ai"
+Repository = "https://github.com/meok-ai-labs/slsa-supply-chain-mcp"
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
+only-include = ["server.py"]
+
+[project.scripts]
+slsa-supply-chain-mcp = "server:main"

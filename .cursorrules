@@ -1,0 +1,13 @@
+# SLSA Supply Chain Levels MCP - Auto-trigger Rules
+
+When the user asks about SLSA, supply chain, provenance, build attestation, Sigstore, use slsa-supply-chain-mcp tools:
+
+- **compute_slsa_level**: Compute SLSA level (Build L1-L3, Source L1-L3) from CI/CD config
+- **validate_provenance**: Validate SLSA provenance attestation
+- **remediation_to_l3**: Roadmap to reach SLSA Build L3
+- **list_requirements**: SLSA requirements per level + track
+- **verify_signed_artefact**: Verify Sigstore-signed artefact + attestation chain
+
+Install: `pip install slsa-supply-chain-mcp`
+
+By MEOK AI Labs — industry governance MCP. Pairs with meok-attestation-api for signed compliance certs.
