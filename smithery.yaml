@@ -1,0 +1,28 @@
+name: slsa-supply-chain-mcp
+description: 'MCP server: slsa-supply-chain-mcp'
+version: 1.0.5
+author: MEOK AI Labs
+homepage: https://safetyof.ai
+repository: https://github.com/MEOK-AI-Labs/slsa-supply-chain-mcp
+license: MIT
+categories:
+- compliance
+- governance
+tools:
+- name: compute_slsa_level
+  description: Compute SLSA level (Build L1-L3, Source L1-L3) from CI/CD config
+- name: validate_provenance
+  description: Validate SLSA provenance attestation
+- name: remediation_to_l3
+  description: Roadmap to reach SLSA Build L3
+- name: list_requirements
+  description: SLSA requirements per level + track
+- name: verify_signed_artefact
+  description: Verify Sigstore-signed artefact + attestation chain
+build:
+  type: python
+  entrypoint: server.py
+  dependencies:
+  - mcp>=1.0.0
+runtime:
+  python: '>=3.10'

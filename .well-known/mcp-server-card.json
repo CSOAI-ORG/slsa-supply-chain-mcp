@@ -1,0 +1,28 @@
+{
+  "name": "slsa-supply-chain-mcp",
+  "title": "Slsa Supply Chain Mcp",
+  "description": "SLSA (Supply chain Levels for Software Artifacts) v1.0 framework. Compute SLSA level + remediation roadmap for software releases.",
+  "version": "1.0.3",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "compute_slsa_level"
+    },
+    {
+      "name": "validate_provenance"
+    },
+    {
+      "name": "remediation_to_l3"
+    },
+    {
+      "name": "list_requirements"
+    },
+    {
+      "name": "verify_signed_artefact"
+    }
+  ]
+}
