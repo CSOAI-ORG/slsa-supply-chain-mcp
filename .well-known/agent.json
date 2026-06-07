@@ -1,0 +1,68 @@
+{
+  "name": "slsa-supply-chain-mcp",
+  "description": "SLSA (Supply chain Levels for Software Artifacts) v1.0 framework. Compute SLSA level + remediati...",
+  "url": "https://proofof.ai/scorecard/slsa-supply-chain-mcp.html",
+  "version": "1.0.3",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "compute_slsa_level",
+      "name": "Compute Slsa Level",
+      "description": "compute_slsa_level via slsa-supply-chain-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "validate_provenance",
+      "name": "Validate Provenance",
+      "description": "validate_provenance via slsa-supply-chain-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "remediation_to_l3",
+      "name": "Remediation To L3",
+      "description": "remediation_to_l3 via slsa-supply-chain-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "list_requirements",
+      "name": "List Requirements",
+      "description": "list_requirements via slsa-supply-chain-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "verify_signed_artefact",
+      "name": "Verify Signed Artefact",
+      "description": "verify_signed_artefact via slsa-supply-chain-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}

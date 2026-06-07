@@ -1,0 +1,23 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "slsa-supply-chain-mcp",
+    "description": "SLSA (Supply chain Levels for Software Artifacts) v1.0 framework. Compute SLSA level + remediati...",
+    "version": "1.0.3",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "slsa-supply-chain-mcp"
+      }
+    ],
+    "capabilities": [
+      "compute_slsa_level",
+      "validate_provenance",
+      "remediation_to_l3",
+      "list_requirements",
+      "verify_signed_artefact"
+    ]
+  }
+}
