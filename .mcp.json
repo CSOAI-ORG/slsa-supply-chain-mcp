@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "slsa-supply-chain-mcp": {
+      "command": "uvx",
+      "args": [
+        "slsa-supply-chain-mcp"
+      ]
+    }
+  }
+}
