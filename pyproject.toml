@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "slsa-supply-chain-mcp"
 readme = "README.md"
-version = "1.0.3"
+version = "1.0.4"
 description = "SLSA (Supply chain Levels for Software Artifacts) v1.0 framework. Compute SLSA level + remediation roadmap for software releases."
 license = {file = "LICENSE"}
 requires-python = ">=3.10"
